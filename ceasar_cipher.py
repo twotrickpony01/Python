@@ -14,7 +14,7 @@ def cipher(plain_text, key): #note that any key that's a multiple of 100 will re
 def decipher(cipher_text, key):
     deciphered_text = ""
     for letter in cipher_text:
-        deciphered_text += character_dict[(character_dict.index(letter) - key) % character_dict_length] #takes plain_text letter position, adds the key value,                                                                                            # mods by the possible characters length, concats to cipher text
+        deciphered_text += character_dict[(character_dict.index(letter) - key) % character_dict_length]                                                                                         # mods by the possible characters length, concats to cipher text
     return deciphered_text
 
 
