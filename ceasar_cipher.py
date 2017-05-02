@@ -20,20 +20,20 @@ def decipher(cipher_text, key):
 
 
 def tests():
-    print cipher("hey my name is adam", 100000000000001)
-    print decipher(cipher("hey my name is adam", 100000000000001), 100000000000001)
+    print cipher("hey my name is Adam, 124!@#$", 100000000000001)
+    print decipher(cipher("hey my name is Adam, 124!@#$", 100000000000001), 100000000000001)
     print
-    print cipher("hey my name is adam", 1)
-    print decipher(cipher("hey my name is adam", 1), 1)
+    print cipher("hey my name is Adam, 124!@#$", 1)
+    print decipher(cipher("hey my name is Adam, 124!@#$", 1), 1)
     print
-    print cipher("hey my name is adam", 0)
-    print decipher(cipher("hey my name is adam", 0), 0)
+    print cipher("hey my name is Adam, 124!@#$", 0)
+    print decipher(cipher("hey my name is Adam, 124!@#$", 0), 0)
     print
-    print cipher("hey my name is adam", -1)
-    print decipher(cipher("hey my name is adam", -1), -1)
+    print cipher("hey my name is Adam, 124!@#$", -1)
+    print decipher(cipher("hey my name is Adam, 124!@#$", -1), -1)
     print
-    print cipher("hey my name is adam", -1000000000001)
-    print decipher(cipher("hey my name is adam", -1000000000001), -1000000000001)
+    print cipher("hey my name is Adam, 124!@#$", -1000000000001)
+    print decipher(cipher("hey my name is Adam, 124!@#$", -1000000000001), -1000000000001)
 
 tests()
 
