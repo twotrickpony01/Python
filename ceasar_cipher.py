@@ -16,25 +16,3 @@ def decipher(cipher_text, key):
     for letter in cipher_text:
         deciphered_text += character_dict[(character_dict.index(letter) - key) % character_dict_length]                                                                                         
     return deciphered_text
-
-
-
-def tests():
-    print cipher("hey my name is Adam, 124!@#$", 100000000000001)
-    print decipher(cipher("hey my name is Adam, 124!@#$", 100000000000001), 100000000000001)
-    print
-    print cipher("hey my name is Adam, 124!@#$", 1)
-    print decipher(cipher("hey my name is Adam, 124!@#$", 1), 1)
-    print
-    print cipher("hey my name is Adam, 124!@#$", 0)
-    print decipher(cipher("hey my name is Adam, 124!@#$", 0), 0)
-    print
-    print cipher("hey my name is Adam, 124!@#$", -1)
-    print decipher(cipher("hey my name is Adam, 124!@#$", -1), -1)
-    print
-    print cipher("hey my name is Adam, 124!@#$", -1000000000001)
-    print decipher(cipher("hey my name is Adam, 124!@#$", -1000000000001), -1000000000001)
-
-tests()
-
-
