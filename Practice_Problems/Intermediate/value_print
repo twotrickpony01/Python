@@ -1,0 +1,14 @@
+import math
+
+D = str(raw_input(("Please give a series of comma separated values that you want to be run through our nifty formula: ")))
+D_values = D.split(",")
+C = 50
+H = 30
+answer = ""
+D_values_length = len(D_values)
+for i in range(0,D_values_length):
+    answer+=str(int(math.sqrt(((2*C*int(D_values[i]))/H))))
+    if D_values_length - i != 1:
+        answer += ","
+    else:
+        print answer
