@@ -6,4 +6,4 @@ def euclidean_distance(UP,DOWN,LEFT,RIGHT):
     x -= DOWN[1]
     y -= LEFT[1]
     y += RIGHT[1]
-    print int(math.sqrt((x*x + y*y)))
+    print(int(math.sqrt((x*x + y*y))))

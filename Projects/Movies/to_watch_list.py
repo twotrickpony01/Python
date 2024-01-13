@@ -24,6 +24,5 @@ def download_and_parse_movies (year):
     return movie_information
 
 for year in range(1980, 2016): #The year range. Later this can made into a method for specific year queries.
-    print year
-    print download_and_parse_movies(year)[10:] #The first 10 entries for each year are worthless
-    print
+    print(year)
+    print(download_and_parse_movies(year)[10:]) #The first 10 entries for each year are worthless
